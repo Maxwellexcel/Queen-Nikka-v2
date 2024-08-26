@@ -25,7 +25,7 @@ function convertToBool(text, fault = 'true') {
 }
 module.exports = {
 SESSION_ID: process.env.SESSION_ID || "LMVkiYbY#jg6YPoAkjSM-R4EdCPNSYWwwcbmgMj8w-5YjXfjVazE", 
-ALIVE_IMG: process.env.ALIVE_IMG || "https://telegra.ph/file/fafe340b81d446d039f15.jpg",
+ALIVE_IMG: process.env.ALIVE_IMG || "https://telegra.ph/file/59456b4ab9b774f35c6f1.jpg",
 ALIVE_MSG: process.env.ALIVE_MSG || "How are you doing?, `*QUEEN NIKKA` IS ALIVE And Running*\n\nCREATOR: `HAKI` \n\nSUBSCRIBE TO MY YOUTUBE CHANNEL FOR MORE UPDATES: https://youtu.be/uTa8keC87mA?si=euhGbTFaojwZk7fL \n\n> *© QUEEN NIKKA WHATSAPP BOT \n\n> ɢɪᴛʜᴜʙ :* github.com/hakisolos/QUEEN_NIKKA",
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 MODE: process.env.MODE || "public",
