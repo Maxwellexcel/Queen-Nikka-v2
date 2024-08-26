@@ -19,7 +19,7 @@ const axios = require('axios')
 const { File } = require('megajs')
 const prefix = '.'
 
-const ownerNumber = ['94717775628']
+const ownerNumber = ['2348121373516']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
@@ -29,7 +29,7 @@ const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
 fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
-console.log("Queen_Anju Session downloaded ✅")
+console.log("Queen_Nikka Session downloaded ✅")
 })})}
 
 const express = require("express");
@@ -39,7 +39,7 @@ const port = process.env.PORT || 8000;
 //=============================================
 
 async function connectToWA() {
-console.log("Connecting Queen_Anju 🧬...");
+console.log("Connecting Queen_Nikka ...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -59,7 +59,7 @@ if (lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut) {
 connectToWA()
 }
 } else if (connection === 'open') {
-console.log('Queen_Anju Is Installing... ')
+console.log('Queen_Nikka Is Installing... ')
 const path = require('path');
 fs.readdirSync("./plugins/").forEach((plugin) => {
 if (path.extname(plugin).toLowerCase() == ".js") {
@@ -67,24 +67,22 @@ require("./plugins/" + plugin);
 }
 });
 console.log('Plugins installed successful ✅')
-console.log('Queen_Anju connected to whatsapp ✅')
+console.log('Queen_Nikka connected to whatsapp ✅')
 
 let up = `
-🚀 **Queen_Anju MD Connected Successfully!** ✅ 
+🚀 **Queen_Nikka MD Connected Successfully!** ✅ 
 
---- **🎉 Welcome to Queen_Anju MD!** 🎉 
+--- ** Welcome to Queen_Nikka!** 
 
 **🔹 PREFIX:** ${prefix}
 
 **🔹 OWNER:**  ${ownerNumber}
 
---- Thank you for using **Queen_Anju MD**. 
-We're here to make your experience enjoyable and seamless. 
-If you need any help or have questions, don't hesitate to ask. 
+--- Thank you for using **Queen_Nikka**. 
 
-**Enjoy your time with us!** 😊 `;
+**Enjoy😊, made with love by haki`;
 
-conn.sendMessage(config.BOT_NUMBER + "@s.whatsapp.net", { image: { url: `https://telegra.ph/file/adc46970456c26cad0c15.jpg` }, caption: up })
+conn.sendMessage(config.BOT_NUMBER + "@s.whatsapp.net", { image: { url: `https://telegra.ph/file/59456b4ab9b774f35c6f1.jpg` }, caption: up })
 
 }
 })
@@ -188,7 +186,7 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 })
 }
 app.get("/", (req, res) => {
-res.send("hey I am alive, Queen_Anju Is started✅");
+res.send("hey , Queen_Nikka Is started✅");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
