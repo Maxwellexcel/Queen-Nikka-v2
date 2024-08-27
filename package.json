@@ -1,12 +1,12 @@
 {
-  "name": "Queen_Anju",
-  "version": "1.0.0",
-  "description": "A Simple WhatsApp bot created By King-Rashmika",
+  "name": "Queen_Nikka",
+  "version": "2.0.0",
+  "description": "A Simple WhatsApp bot created By emperor haki",
   "main": "queen.js",
   "scripts": {
-    "start": "pm2 start queen.js --deep-monitoring --attach --name Queen_Anju",
-    "stop": "pm2 stop Queen_Anju",
-    "restart": "pm2 restart Queen_Anju"
+    "start": "pm2 start queen.js --deep-monitoring --attach --name Queen_Nikka",
+    "stop": "pm2 stop Queen_Nikka",
+    "restart": "pm2 restart Queen_Nikka"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "6.6.0",
