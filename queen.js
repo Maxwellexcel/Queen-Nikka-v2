@@ -70,19 +70,19 @@ console.log('Plugins installed successful ✅')
 console.log('Queen_Nikka connected to whatsapp ✅')
 
 let up = `
-🚀 **Queen_Nikka MD Connected Successfully!** ✅ 
+🚀 *Queen_Nikka Has been  Connected Successfully!* ✅ 
 
---- ** Welcome to Queen_Nikka!** 
+ PREFIX= ${prefix}
 
-**🔹 PREFIX:** ${prefix}
+ OWNER=  ${ownerNumber}
 
-**🔹 OWNER:**  ${ownerNumber}
+ Join our channel for updates: https://whatsapp.com/channel/0029VaqgxNt5q08c9XMItG3P
 
---- Thank you for using **Queen_Nikka**. 
+ repo:https://github.com/Maxwellexcel/Queen-Nikka-v2
 
 **Enjoy😊, made with love by haki`;
 
-conn.sendMessage(config.BOT_NUMBER + "@s.whatsapp.net", { image: { url: `https://telegra.ph/file/59456b4ab9b774f35c6f1.jpg` }, caption: up })
+conn.sendMessage(config.BOT_NUMBER + "@s.whatsapp.net", { image: { url: `https://telegra.ph/file/2c6582067485954d33200.jpg` }, caption: up })
 
 }
 })
@@ -186,7 +186,7 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 })
 }
 app.get("/", (req, res) => {
-res.send("hey , Queen_Nikka Is started✅");
+res.send("hey , Queen_Nikka running✅");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
